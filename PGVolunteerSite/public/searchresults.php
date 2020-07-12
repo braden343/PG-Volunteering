@@ -1,6 +1,6 @@
 <?php
    session_start();
-$search = filter_input(INPUT_POST, ’search_criteria', FILTER_VALIDATE_INT);
+$search = filter_input(INPUT_POST, 'search_criteria', FILTER_VALIDATE_INT);
 //Query for search results
 ?>
 
