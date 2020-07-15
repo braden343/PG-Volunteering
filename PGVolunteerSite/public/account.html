@@ -4,9 +4,19 @@
 </head>
 <body>
 <h1>Account</h1>
-    <p>Name: </p>
-    <p>Contact Information: </p>
-    <p>Role: </p>
+<form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value=""><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value=""><br>
+    <label for="email">Email address:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="phone">Phone number:</label><br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+    <input type="submit" value="Submit"><br>
+  </form> 
 </body>
 
 </html>
+
+<!--Need to edit this so stored account info is displayed and then an edit button is used to update as needed.-->

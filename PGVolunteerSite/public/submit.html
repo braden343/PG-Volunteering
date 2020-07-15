@@ -4,8 +4,12 @@
    </head>
    <body>
       <h1>Submit a new request</h1>
-      <p>Title of request: </p>
-      <p>Request description: </p>
+      <form action="/action_page.php">
+         <label for="title">Title:</label><br>
+         <input type="text" id="title" name="title" value=""><br>
+         <textarea id="summary" name="summary" rows="10" cols="50">Please include any relevant details about your request.</textarea><br>
+         <input type="submit" value="Submit">
+       </form> 
    </body>
 </html>
 
