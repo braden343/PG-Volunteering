@@ -13,7 +13,7 @@ $search = filter_input(INPUT_POST, 'search_criteria', FILTER_VALIDATE_INT);
     <title>Document</title>
 </head>
 <body>
-       <h1>Here are your search results with <?=$search?></h1>
+       <h2><strong>Here are your search results with <?=$search?></strong></h2>
        <table style="border: 1px solid black">
        <tr>
         <td>Project Name</td>

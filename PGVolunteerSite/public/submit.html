@@ -1,54 +1,39 @@
 <html>
    <head>
-      <title>Pleasant Grove Volunteering</title>
-      <style type="text/css"> 
-<!-- 
- 
- #navbar ul { 
-	margin: 0; 
-	padding: 5px; 
-	list-style-type: none; 
-	text-align: center; 
-	background-color: #000; 
-	} 
- 
-#navbar ul li {  
-	display: inline; 
-	} 
- 
-#navbar ul li a { 
-	text-decoration: none; 
-	padding: .2em 1em; 
-	color: #fff; 
-	background-color: #000; 
-	} 
- 
-#navbar ul li a:hover { 
-	color: #000; 
-	background-color: #fff; 
-	} 
- 
---> 
-</style> 
+      <head>
+         <title>Pleasant Grove Volunteering</title>
+         <meta charset="utf-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1" />
+         <link rel="stylesheet" href="assets/css/main.css" />
+      </head>
    </head>
    <body>
-      <div id="navbar"> 
-  <ul> 
-	<li><a href="submit.html">Submit a Request</a></li> 
-	<li><a href="review.html">Review Requests</a></li> 
-	<li><a href="ProjectSearch.html">Search Open Projects</a></li> 
-	<li><a href="account.html">My Account</a></li> 
-	<li><a href="createaccount.html">Create an Account</a></li> 	
-  <li><a href="login.html">Log In</a></li>
-  </ul> 
-</div> 
-      <h1>Submit a new request</h1>
-      <form action="/action_page.php">
-         <label for="title">Title:</label><br>
-         <input type="text" id="title" name="title" value=""><br>
-         <textarea id="summary" name="summary" rows="10" cols="50">Please include any relevant details about your request.</textarea><br>
-         <input type="submit" value="Submit">
-       </form> 
+       <section id="two" class="wrapper style2 special">
+         <div class="inner narrow">
+            <header>
+               <h2><strong>Submit a new request</strong></h2>
+            </header>
+            <form class="grid-form" method="post" action="#">
+               <div class="form-control narrow">
+                  <label for="name">Name</label>
+                  <input name="name" id="name" type="text">
+               </div>
+               <div class="form-control narrow">
+                  <label for="date">On the date of:</label>
+                  <input name="date" id="date" type="date">
+               </div>
+               <div class="form-control">
+                  <label for="message">Details of your request:</label>
+                  <textarea name="message" id="message" rows="12"></textarea>
+               </div>
+               <ul class="actions">
+                  <li><input value="Submit" type="submit"></li>
+               </ul>
+            </form>
+         </div>
+      </section>
+
+      </div>
    </body>
 </html>
 
