@@ -32,6 +32,7 @@
          <link rel="stylesheet" href="assets/css/main.css" />
       </head>
    </head>
+   <main>
    <body>
       <div id="navbar"> 
          <ul> 
@@ -48,28 +49,60 @@
             <header>
                <h2><strong>Submit a new request</strong></h2>
             </header>
-            <form class="grid-form" method="post" action="#">
-               <div class="form-control narrow">
-                  <label for="name">Name</label>
-                  <input name="name" id="name" type="text">
-               </div><br><br>
-               <div class="form-control narrow">
-                  <label for="date">Date:</label>
-                  <input name="date" id="date" type="date">
-               </div>
-               <div class="form-control">
-                  <label for="message">Details of your request:</label>
-                  <textarea name="message" id="message" rows="12"></textarea>
-               </div>
-               <ul class="actions">
-                  <li><input value="Submit" type="submit"></li>
-               </ul>
-            </form>
+            <form action="/action_page.php">
+               <label for="projectUserId">User ID:</label>
+               <input type="text" id="projectUserId" name="userID" value="">
+               <label for="projectTitle">Title:</label>
+               <input type="text" id="projectTitle" name="title" value="">
+               <label for="projectDate">Date Submited:</label>
+               <input type="date" id="projectDate" name="date"><br>
+               <labal for="projectDetails">Details of Project:</labal>
+               <textarea id="projectDetails" name="Details" rows="10" cols="50"></textarea>
+               
+               <label for="project">Choose a project type</label>
+      
+               <select name="projectType" id="projectType">
+                  <option value="IT">IT Related</option>
+                  <option value="Clean-Up">Social Space Clean Up</option>
+                  <option value="Labor">Manual Labor</option>
+                  <option value="Road">Road Maintenance</option>
+                  <option value="Sewage">Sewage Maintenance</option>
+                  <option value="Art">Art Consignment</option>
+                  <option value="Sanitation">Sanitation Services</option>
+                  <option value="Other">Other</option>
+               </select><br>
+      
+               <button id="btnSubmit">Submit</button>
+             </form> 
          </div>
       </section>
-
-      </div>
+   </main>
    </body>
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCF7k6l1yLv-moxcCw_oA530d42cEItc94",
+    authDomain: "pleasant-grove-volunteering.firebaseapp.com",
+    databaseURL: "https://pleasant-grove-volunteering.firebaseio.com",
+    projectId: "pleasant-grove-volunteering",
+    storageBucket: "pleasant-grove-volunteering.appspot.com",
+    messagingSenderId: "198411671421",
+    appId: "1:198411671421:web:82099b8a65557453139e14",
+    measurementId: "G-38SN3D0929"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src=".\functions.js"></script>
 </html>
 
 <!-- If the user is not logged in with an existing account, we should either redirect them to the sign in page-->
