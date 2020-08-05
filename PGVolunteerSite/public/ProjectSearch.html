@@ -21,7 +21,7 @@
       } 
    #navbar ul li a:hover { 
       color: #000; 
-      background-color: #fff; 
+      background-color: #00b4b5; 
       } 
    </style> 
 <head>
@@ -40,10 +40,10 @@
     <li><a href="createaccount.html">Create an Account</a></li> 	
     <li><a href="login.html">Log In</a></li>
     </ul> 
-  </div>    
+  </div><br>
   <form action="searchresults.php" method="post">
-            Project title: <input type="text" name=“search_criteria" size="55">
-            <input type="submit" value="Submit">
+            Project title: <input type="text" name=“search_criteria" size="55"><br>
+            <input type="submit" value="Search">
   </form>
   <table style="border: 1px solid black">
   <tr>
@@ -53,9 +53,9 @@
   </tr>
   <?php foreach ($users as $user) :?>
   <tr>
-    <td>//Project Name</td>
-    <td>//Description</td>
-    <td>View More button</td>
+    <td>--Project Name</td>
+    <td>--Description</td>
+    <td>--View More button</td>
     <td>&nbsp;</td>
   </tr>
   <?php endforeach; ?>

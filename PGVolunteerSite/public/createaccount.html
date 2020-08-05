@@ -20,7 +20,7 @@
       } 
    #navbar ul li a:hover { 
       color: #000; 
-      background-color: #fff; 
+      background-color: #00b4b5; 
       } 
    </style> 
 	<head>
@@ -42,9 +42,16 @@
   </div> 
 <form action="action_page.php" style="border:1px solid #ccc">
     <div class="container">
+      <br>
       <h2><strong>Create An Account</strong></h2>
       <p>Please fill in this form to create an account.</p>
       <hr>
+
+      <label for="fname"> <b>First name:</b></label>
+      <input type="text" placeholder="Enter First Name" id="fname" name="fname" required><br>
+
+      <label for="lname"><b>Last name:</b></label>
+      <input type="text" placeholder="Enter Last Name" id="lname" name="lname" required><br>
   
       <label for="email"><b>Email</b></label>
       <input type="text" placeholder="Enter Email" name="email" required><br>
@@ -55,18 +62,10 @@
       <label for="psw-repeat"><b>Repeat Password</b></label>
       <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
   
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
-  
       <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
   
       <div class="clearfix">
-        <button type="button" class="cancelbtn">Cancel</button>
         <button type="submit" class="signupbtn">Sign Up</button>
-      </div>
+      </div><br>
     </div>
   </form>
-
-<!-- Pulled from https://www.w3schools.com/howto/howto_css_signup_form.asp if you want to use this code.
-Still need CSS, need to connect to database, need to add fields for first and last name, phone number, and email address-->
