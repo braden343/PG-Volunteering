@@ -42,7 +42,7 @@
     </ul> 
   </div><br>
   <form action="searchresults.php" method="post">
-            Project title: <input type="text" name=“search_criteria" size="55"><br>
+            Project title: <input type="text" name=“search_criteria" size="55">
             <input type="submit" value="Search">
   </form>
   <table style="border: 1px solid black">
@@ -53,9 +53,9 @@
   </tr>
   <?php foreach ($users as $user) :?>
   <tr>
-    <td>--Project Name</td>
-    <td>--Description</td>
-    <td>--View More button</td>
+    <td>Project Name</td>
+    <td>Description</td>
+    <td>View More button</td>
     <td>&nbsp;</td>
   </tr>
   <?php endforeach; ?>

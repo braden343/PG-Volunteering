@@ -1,5 +1,5 @@
 const projectTitle = document.getElementById('projectTitle');
-const projectUserId = document.getElementById('projectUserId');
+//const projectUserId = document.getElementById('projectUserId');>
 const projectDate = document.getElementById('projectDate');
 const projectDetails = document.getElementById('projectDetails');
 const projectType = document.getElementById('projectType');
@@ -13,9 +13,9 @@ btnSubmit.addEventListener('click', (e) => {
     //const autoId = rootRef.push().key
     //rootRef.child(autoId.value).set({
     database.ref('/projects/'+ projectTitle.value).set({
-        //project_title: projectTitle.value,
+        project_title: projectTitle.value,
         project_date: projectDate.value,
-        project_userID: projectUserId.value,
+        //project_userID: projectUserId.value,
         project_details: projectDetails.value,
         project_type: projectType.value
     });

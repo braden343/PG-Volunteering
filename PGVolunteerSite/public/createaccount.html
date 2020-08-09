@@ -39,22 +39,24 @@
     <li><a href="createaccount.html">Create an Account</a></li> 	
     <li><a href="login.html">Log In</a></li>
     </ul> 
-  </div> 
-<form action="action_page.php" style="border:1px solid #ccc">
+  </div>
+<form action="welcometosite.html" style="border:1px solid #ccc">
     <div class="container">
-      <br>
       <h2><strong>Create An Account</strong></h2>
       <p>Please fill in this form to create an account.</p>
       <hr>
-
-      <label for="fname"> <b>First name:</b></label>
-      <input type="text" placeholder="Enter First Name" id="fname" name="fname" required><br>
-
-      <label for="lname"><b>Last name:</b></label>
-      <input type="text" placeholder="Enter Last Name" id="lname" name="lname" required><br>
   
       <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required><br>
+      <input type="email" placeholder="Enter Email" name="email" required><br>
+
+      <label for="fname"><b>First Name</b></label>
+      <input type="text" placeholder="First Name" name="fname" required><br>
+
+      <label for="lname"><b>Last Name</b></label>
+      <input type="text" placeholder="Last Name" name="lname" required><br>
+
+      <label for="tel"><b>Phone Number</b></label>
+      <input type="text" placeholder="Phone Number" name="tel" required><br>
   
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required><br>
@@ -66,6 +68,9 @@
   
       <div class="clearfix">
         <button type="submit" class="signupbtn">Sign Up</button>
-      </div><br>
-    </div>
+      </div>
+    </div><br>
   </form>
+
+<!-- Pulled from https://www.w3schools.com/howto/howto_css_signup_form.asp if you want to use this code.
+Still need CSS, need to connect to database, need to add fields for first and last name, phone number, and email address-->
